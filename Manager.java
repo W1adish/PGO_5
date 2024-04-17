@@ -2,7 +2,6 @@ import java.util.ArrayList;
 
 class Manager extends Employee {
     private ArrayList<Goal> goals;
-    // Constructor
     public Manager(String imie, String nazwisko, String adres, String email, String pesel, int employmentYear) {
         super(imie, nazwisko, adres, email, pesel, employmentYear);
         this.goals = new ArrayList<>();
@@ -10,7 +9,6 @@ class Manager extends Employee {
     public void addGoal(Goal goal) {
         this.goals.add(goal);
     }
-    // Override method to calculate salary
     @Override
     public int calculateSalary() {
         int baseSalary = 3000 + (2024 - employmentYear) * 1000;
