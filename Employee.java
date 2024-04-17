@@ -5,7 +5,6 @@ abstract class Employee {
         protected String email;
         protected String PESEL;
         protected int employmentYear;
-        // Constructor
         public Employee(String firstName, String lastName, String address, String email, String PESEL, int employmentYear) {
             this.firstName = firstName;
             this.lastName = lastName;
